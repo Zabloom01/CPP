@@ -36,5 +36,6 @@ root2 = (-b - std::sqrt(b*b - 4*a*c)) / (2*a);
 std::cout << "Root 1 is " << root1 << "\n"; // print root1
 std::cout << "Root 2 is " << root2 << "\n"; // print root2
 
+return 0;
 
 }
