@@ -1,11 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 
-/*
-Rock, paper, scissors, lizzard, spock 
-(The Big Bang Theory)
-*/
-
 int main(){
 
   srand(time(NULL)); // set the "seed" based on current time
@@ -52,9 +47,12 @@ else {
 
 // Determine the winner using conditional statements:
 
+// If both choose same number:
 if(user == computer){
   std::cout << "it's a tie!";
 }
+
+// User chooses rock:
 else if(user == 1 && computer == 2){
   std::cout << "CPU wins \n!";
 }
@@ -62,12 +60,16 @@ else if(user == 1 && computer == 2){
 else if(user == 1 && computer == 3){
   std::cout << "You win! \n";
 }
+
+// User chooses paper:
 else if(user == 2 && computer == 1){
   std::cout << "You win! \n";
 }
 else if(user == 2 && computer == 3){
   std::cout << "CPU wins! \n";
 }
+
+// User chooses scissors:
 else if (user == 3 && computer == 1){
   std::cout << "You lose! \n";
 }
