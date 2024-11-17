@@ -1,33 +1,34 @@
 #include <iostream>
-#include <vector>
-#include <string>
+#include <vector> // we will use vectors
+#include <string> // we will use strings
 
 int main (){
+std::string input = "turpentine and turtles"; // initialize string to this phrase.
+std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u'}; // whales can only speak in vowels
 
-// input string for the program to translate
-std::string input ("turpentine and turtles"); // initialize string for input variable to this phrase.
+std::vector<char> results = {}; // this is a place to store vectors as result, starts as nothing since no values.  You can also just do std::vector<char> results;
 
-// create a char vector names vowels
-std::vector<char> vowels = {'a', 'e', 'i', 'o', 'u'};
-std::vector<char> result; // create results vector to store vowels from the input string (e.g., translated whale talk).
+// take size of input string
+for (int i = 0; i < input.size(); i++){
 
-for(int i = 0; i < input.size(); i++){ // input.size() measures the characters of the input string.
+// take size of vowels vector
+  for (int j = 0; j < vowels.size(); j++){
 
-  for(int j = 0; j < vowels.size(); j++){ // this is a nested for loop that iterates through the vowel vector.  Helps make easier to iterate through input string and vector
+    // compare string input [i] to vector vowels
+      if (input[i] == vowels[j]){
+        results.push_back(input[i]);
 
-    if (input[i] == vowels[j]){
-      result.push_back(input[i]);
+      // for 'e' or 'u' push them into input[i], this doubles up on the e's and u's
+        if (input[i] == 'e' || input[i] == 'u'){
+          results.push_back(input[i]);
+        }
 
-      if (input[i] == 'e' || input[i] == 'u'){
-        result.push_back(input[i]);
       }
-
-    }
   }
 }
 
-for (int k = 0; k < result.size(); k++){
-  std::cout << result[k];
+for (int k = 0; k < results.size(); k++){
+  std::cout << results[k];
 }
 
 std::cout << "\n";
