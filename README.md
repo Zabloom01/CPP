@@ -1,3 +1,3 @@
-C++ was the very first language that I ever learned.  I began back in 2015 during college.  Today, as of Nov. 2024, I picked it back up again and wanted to start a portfolio for the projects I have done since I believe a lot of the key concepts and structures of the code are practiced here.
+C++ was the first programming language I ever learned, dating back to 2015 during my college years. As of November 2024, I have picked it up again and decided to create a portfolio to track and showcase some of the projects I have worked on. I believe the codes I have written show a lot of the key concepts, structures, and foundations making them valuable.
 
-If you have any questions/comments please reach out!
+If you have any questions or comments, please feel free to reach out!
