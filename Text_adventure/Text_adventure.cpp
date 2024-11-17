@@ -138,10 +138,10 @@ int main() {
     Character player("", "");
     switch (charChoice) {
     case 1:
-        player = Character("Alice", "A brave warrior with unmatched courage."); // Character class follows name and description.  Set Character to name, description accordingly.
+        player = Character("Thor", "A brave warrior with unmatched courage."); // Character class follows name and description.  Set Character to name, description accordingly.
         break;
     case 2:
-        player = Character("Bob", "A cunning rogue who thrives in the shadows.");
+        player = Character("Ivan", "A cunning rogue who thrives in the shadows.");
         break;
     case 3:
         player = Character("Clara", "A wise mage with knowledge of arcane spells.");
