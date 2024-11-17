@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-using namespace std;  // makes it so you do not have to type std:: so many times
+using namespace std;  // Makes it so you do not have to type std:: so many times
 
 // Character class to define each character
 class Character {
@@ -16,10 +16,11 @@ public:
     }
 };
 
-// Forest path with loops for retry
+// Define functions for text adventure game.  The loops give the user a second chance to hopefully recover from their mistakes or poor choices.
+// Forest path with loops:
 void exploreForest() {
     cout << "\nYou enter the dark forest. Shadows twist and turn in the corners of your vision.\n";
-    bool loop = true;
+    bool loop = true; // once function is selected bool loop is set to true. The loop will continue to run as long as bool loop = true, otherwise if false, the loop ends.
     while (loop) {
         cout << "You come across a fork in the path. Do you:\n1. Take the left path (deeper into the forest)\n2. Take the right path (toward faint light)\n";
         int choice;
@@ -53,7 +54,7 @@ void exploreForest() {
     }
 }
 
-// Mountain path with loops
+// Mountain path with loops:
 void climbMountain() {
     cout << "\nYou begin your climb up the mountain, the air getting colder with each step.\n";
     bool loop = true;
@@ -89,7 +90,7 @@ void climbMountain() {
     }
 }
 
-// Castle path with loops
+// Castle path with loops:
 void exploreCastle() {
     cout << "\nYou approach the ominous castle, its spires piercing the clouds.\n";
     bool loop = true;
