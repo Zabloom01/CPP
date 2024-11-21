@@ -1,20 +1,9 @@
-#include <iostream>
 #include <string>
 #include <vector>
-#include "functions.hpp"  // include this file for the functions.
 
+// Function declarations
+// pass-by-reference - function operates directly on the original object in memory rather than copying it allowing the function to modify the original object if reference is not marked as constant and avoids creating copy which improves the performance, especially as the vector gets larger.
+void bleep(const std::vector<std::string>& words, std::string& sentence); // Words as vector and sentence by reference
+void asterisk(const std::string& word, std::string& sentence, int i); // Single word, sentence by reference, and index
 
-int main() {
-    // Using std::vector for the list of words
-    std::vector<std::string> words = {"broccoli", "spinach"}; // adjust this vector as needed to include more words
-
-    std::string sentence = "I sometimes eat broccoli.  I think broccoli tastes really good if you cook it right and have a good dipping sauce.  If you like broccoli, you should try spinach too!  They are both great for you! #broccoli #spinach";
-
-    // Call the bleep function
-    bleep(words, sentence);
-
-    // Print the modified sentence
-    std::cout << sentence << "\n";
-
-    return 0;
-}
+// const passes the object but does not allow modifcations to the reference object.  This is common for vectors when not using pop_back() or push_back()
